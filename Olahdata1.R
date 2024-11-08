@@ -1,11 +1,31 @@
-# Load required libraries
-library(dplyr)
+# Create two 2x3 matrices.
+matrix1 <- matrix(c(1, 2, 3, 4, 5, 6), nrow = 3)
+matrix2 <- matrix(c(7, 8, 9, 10, 11, 12), nrow = 3)
 
-# Read the CSV file (replace with your file path if different)
-data <- read.csv("/Users/frandypasaribu/Downloads/Air_Traffic_Passenger_Statistics.csv")
+# Print the matrices
+print("The first matrix is:")
+print(matrix1)
+print("The second matrix is:")
+print(matrix2)
 
-# Display the structure of the dataset
-str(data)
+# Add the matrices
+result1 <- matrix1 + matrix2
 
-# Display a summary of the dataset
-summary(data)
+# Subtract the matrices
+result2 <- matrix1 - matrix2
+
+# Element-wise multiplication of the matrices
+result3 <- matrix1 * matrix2
+
+# Element-wise division of the matrices
+result4 <- matrix1 / matrix2
+
+# Print results
+print("The result of Addition is:")
+print(result1)
+print("The result of Subtraction is:")
+print(result2)
+print("The result of Element-wise Multiplication is:")
+print(result3)
+print("The result of Element-wise Division is:")
+print(result4)
